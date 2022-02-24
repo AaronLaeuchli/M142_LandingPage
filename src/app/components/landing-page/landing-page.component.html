@@ -1,0 +1,105 @@
+<mat-drawer-container>
+    <mat-drawer #drawer [mode]="isShowHideFlag">
+      <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
+      <br>
+      <h1>Skiferien</h1>
+      <mat-list role="list">
+        <mat-list-item role="listitem"><a mat-button>BW</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button>Blur</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button>Carousel</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button>Gallery</a></mat-list-item>
+      </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-toolbar class="nav">
+        <mat-list role="list">
+          <mat-list-item role="listitem"><a mat-button>BW</a></mat-list-item>
+          <mat-list-item role="listitem"><a mat-button>Blur</a></mat-list-item>
+          <mat-list-item role="listitem"><a mat-button>Carousel</a></mat-list-item>
+          <mat-list-item role="listitem"><a mat-button>Gallery</a></mat-list-item>
+        </mat-list>
+      </mat-toolbar>
+  
+      
+      <div class="silder">
+        <app-carousel></app-carousel>
+      </div>
+  
+  
+      <div class="features">
+        <div class="row">
+          <div class="column">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+            <h3>Mockup</h3>
+            <p>Schau dir das Mockup dieser Website an und vergleiche es mit der tatsächlichen Umsetzung.
+            </p>
+          </div>
+          <div class="column">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+            <h3>Entscheidungsmatrix</h3>
+            <p>Welches Framework wurde in diesem Projekt aus welchem Grund verwendet?
+            </p>
+          </div>
+          <div class="column">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" click="responsiveClick()">home</mat-icon>
+            <h3>Responsive
+            </h3>
+            <p>Diese Website wurde mit Angular Material responsive gemacht.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contents">
+        <div class="row">
+          <div class="column">
+            <img src="https://unsplash.com/photos/MI9-PY5cyNs/download?force=true">
+          </div>
+          <div class="column center-content">
+            <h3>Angular Material Buttons
+            </h3>
+            <p>Angular Material buttons are native button or a tags elements enhanced with Material Design styling and ink
+              ripples.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column center-content">
+            <h3>Angular Material Stepper</h3>
+            <p>Material stepper builds on the foundation of the CDK stepper that is responsible for the logic that drives
+              a stepped workflow. Material stepper extends the CDK stepper and has Material Design styling.
+            </p>
+          </div>
+          <div class="column">
+            <img src="https://unsplash.com/photos/6JVlSdgMacE/download?force=true">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="https://unsplash.com/photos/Fi-GJaLRGKc/download?force=true">
+          </div>
+          <div class="column center-content">
+            <h3>Angular Material Tables
+            </h3>
+            <p>This table builds on the foundation of the CDK data-table and uses a similar interface for its data input
+              and template.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contactus">
+        <h2>Jetzt für Updates abonnieren</h2>
+        <form>
+          <mat-form-field appearance="fill">
+            <mat-label>Abonnieren</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <button mat-flat-button>Jetzt abonnieren</button>
+        </form>
+      </div>
+      <div class="footer" color="primary">
+        <mat-toolbar color="primary">
+          <span> &copy; Aaron Läuchli</span>
+        </mat-toolbar>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
