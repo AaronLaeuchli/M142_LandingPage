@@ -17,6 +17,9 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { BlackwhiteComponent } from './components/blackwhite/blackwhite.component';
 import { BlurComponent } from './components/blur/blur.component';
+import { MockupComponent } from './components/mockup/mockup.component';
+import { MatrixComponent } from './components/matrix/matrix.component';
+import { ResponsiveComponent } from './components/responsive/responsive.component';
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { BlurComponent } from './components/blur/blur.component';
     LandingPageComponent,
     BlackwhiteComponent,
     BlurComponent,
+    MockupComponent,
+    MatrixComponent,
+    ResponsiveComponent,
 
   ],
   imports: [
