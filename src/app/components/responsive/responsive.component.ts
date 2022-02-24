@@ -12,4 +12,10 @@ export class ResponsiveComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showHide() {
+
+  }
+
+  isShowHideFlag:any = "over"
+
 }

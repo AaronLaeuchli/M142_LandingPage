@@ -12,4 +12,11 @@ export class MatrixComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showHide() {
+
+  }
+
+  isShowHideFlag:any = "over"
+
+
 }

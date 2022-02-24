@@ -13,10 +13,10 @@ export class CarouselComponent implements OnInit {
   }
 
   slides = [
-    {'image': 'assets/images/aussicht1.jpg'}, 
-    {'image': 'assets/images/dorf.JPG'},
-    {'image': 'assets/images/funpark.jpg'},     
-    {'image': 'assets/images/schneenebel.JPG'}, 
+    {'image': 'assets/images/pano1.jpg'}, 
+    {'image': 'assets/images/pano2.jpg'}, 
+    {'image': 'assets/images/pano4.jpg'}, 
+    {'image': 'assets/images/pano5.jpg'}, 
   ];
 
 }

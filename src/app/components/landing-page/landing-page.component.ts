@@ -20,21 +20,6 @@ export class LandingPageComponent implements OnInit {
   isShowHideFlag:any = "over"
 
 
-  clickMockup(){
-    console.log("clickMockup");
-    this.router.navigateByUrl('mockup');
-  }
-
-  clickMatrix(){
-    console.log("clickMatrix");
-    this.router.navigateByUrl('matrix');
-  }
-
-  clickResponsive(){
-    console.log("clickResponsive");
-    this.router.navigateByUrl('responsive');
-  }
-
 
 }
 

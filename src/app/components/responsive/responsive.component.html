@@ -1,1 +1,52 @@
-<p>responsive works!</p>
+<mat-drawer-container>
+  <mat-drawer #drawer [mode]="isShowHideFlag">
+    <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
+    <br>
+    <h1>Skiferien</h1>
+    <mat-list role="list">
+      <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">BW</a></mat-list-item>
+      <mat-list-item role="listitem"><a mat-button routerLink="blur">Blur</a></mat-list-item>
+      <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Carousel</a></mat-list-item>
+      <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Gallery</a></mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar class="nav">
+      <mat-list role="list">
+        <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">BW</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button routerLink="blur">Blur</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Carousel</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Gallery</a></mat-list-item>
+      </mat-list>
+    </mat-toolbar>
+
+
+
+    <div class="contents">
+      <div class="row">
+        <div class="column">
+          <img src="assets/images/Unbenannt.JPG">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>Modul 152
+          </h3>
+          <p>Multimedia-Elemente für Webauftritte nach Vorgabe erstellen und
+              bestehende Multimedia-Inhalte aufbereiten, optimieren und in einen
+              bestehenden Webauftritt integrieren.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <div class="footer" color="primary">
+      <mat-toolbar color="primary">
+        <span> &copy; Aaron Läuchli</span>
+      </mat-toolbar>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
