@@ -117,7 +117,7 @@ img {
 }
 
 .silder {
-  height: 600px;
+  height: 10%;
   background-size: cover;
   background-position: center;
   opacity: .9;
@@ -157,7 +157,7 @@ img {
 }
 
 .features {
-  padding-top: 60px;
+  padding-top: 1%;
 
   .row {
     width: 100%;
@@ -357,3 +357,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .space{
   margin-top: 2.5%;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
