@@ -1,0 +1,52 @@
+
+<mat-drawer-container>
+  <mat-drawer #drawer [mode]="isShowHideFlag">
+    <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
+    <h1>Skiferien</h1>
+    <mat-list role="list">
+      <mat-list-item role="listitem"><a mat-button routerLink="">Home</a></mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar class="nav ">
+      <mat-list role="list">
+        <mat-list-item role="listitem"><a mat-button routerLink="">Home</a></mat-list-item>
+      </mat-list>
+    </mat-toolbar>
+
+    <div class="silder">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="desktop-hide" (click)="drawer.toggle()">
+        reorder
+      </mat-icon>
+      <app-carousel></app-carousel>
+    </div>
+
+    <div class="space"></div>
+
+    <app-blackwhite></app-blackwhite>
+
+    <div class="space"></div>
+
+    <app-blur></app-blur>
+
+    <div class="space"></div>
+
+    <div class="contactus">
+      <h2>Jetzt für Updates abonnieren</h2>
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>Abonnieren</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <button mat-flat-button>Jetzt abonnieren</button>
+      </form>
+    </div>
+
+
+    <div class="footer" color="primary">
+      <mat-toolbar color="primary">
+        <span> &copy; Aaron Läuchli</span>
+      </mat-toolbar>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
