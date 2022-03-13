@@ -6,6 +6,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { MatrixComponent } from './components/matrix/matrix.component';
 import { MockupComponent } from './components/mockup/mockup.component';
 import { ResponsiveComponent } from './components/responsive/responsive.component';
+import {EditedPicturesComponent} from "./components/edited-pictures/edited-pictures.component";
 
 
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'responsive', component: ResponsiveComponent },
   { path: 'blackwhite', component: BlackwhiteComponent },
   { path: 'blur', component: BlurComponent },
+  { path: 'edited', component: EditedPicturesComponent },
 ];
 
 @NgModule({

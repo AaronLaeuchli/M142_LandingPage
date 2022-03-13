@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,8 +21,15 @@ import { MockupComponent } from './components/mockup/mockup.component';
 import { MatrixComponent } from './components/matrix/matrix.component';
 import { ResponsiveComponent } from './components/responsive/responsive.component';
 
+import 'img-comparison-slider';
+import { EditedPicturesComponent } from './components/edited-pictures/edited-pictures.component';
 
+
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     CarouselComponent,
@@ -32,7 +39,7 @@ import { ResponsiveComponent } from './components/responsive/responsive.componen
     MockupComponent,
     MatrixComponent,
     ResponsiveComponent,
-
+    EditedPicturesComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,7 @@ import { ResponsiveComponent } from './components/responsive/responsive.componen
     MatFormFieldModule,
     MatInputModule,
     MatSidenavModule,
-    MatCarouselModule.forRoot()
+    MatCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

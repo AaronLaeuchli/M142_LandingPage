@@ -1,4 +1,5 @@
 <mat-drawer-container>
+
   <mat-drawer #drawer [mode]="isShowHideFlag">
     <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
     <br>
@@ -13,22 +14,20 @@
         <mat-list-item role="listitem"><a mat-button routerLink="">Menu</a></mat-list-item>
       </mat-list>
     </mat-toolbar>
+    <div class="silder">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="desktop-hide" (click)="drawer.toggle()">
+        reorder
+      </mat-icon>
+    </div>
 
 
 
     <div class="contents">
       <div class="row">
         <div class="column">
-          <img src="assets/images/Unbenannt.JPG">
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <h3>Modul 152
+          <h3>Responsive
           </h3>
-          <p>Multimedia-Elemente für Webauftritte nach Vorgabe erstellen und
-              bestehende Multimedia-Inhalte aufbereiten, optimieren und in einen
-              bestehenden Webauftritt integrieren.
+          <p>Die Website wurde mit Hilfe von Material und einfachem CSS responsive gemacht.
           </p>
         </div>
       </div>

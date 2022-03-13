@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlackwhiteComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

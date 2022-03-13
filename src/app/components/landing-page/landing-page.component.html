@@ -1,113 +1,109 @@
 <mat-drawer-container>
-    <mat-drawer #drawer [mode]="isShowHideFlag">
-      <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
-      <br>
-      <h1>Skiferien</h1>
+  <mat-drawer #drawer [mode]="isShowHideFlag">
+    <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
+    <h1>Skiferien</h1>
+    <mat-list role="list">
+      <mat-list-item role="listitem"><a mat-button routerLink="edited">Gallery</a></mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar class="nav ">
       <mat-list role="list">
-        <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">BW</a></mat-list-item>
-        <mat-list-item role="listitem"><a mat-button routerLink="blur">Blur</a></mat-list-item>
-        <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Carousel</a></mat-list-item>
-        <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Gallery</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button routerLink="edited">Gallery</a></mat-list-item>
       </mat-list>
-    </mat-drawer>
-    <mat-drawer-content>
-      <mat-toolbar class="nav">
-        <mat-list role="list">
-          <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">BW</a></mat-list-item>
-          <mat-list-item role="listitem"><a mat-button routerLink="blur">Blur</a></mat-list-item>
-          <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Carousel</a></mat-list-item>
-          <mat-list-item role="listitem"><a mat-button routerLink="blackwhite">Gallery</a></mat-list-item>
-        </mat-list>
-      </mat-toolbar>
+    </mat-toolbar>
 
+    <div class="silder">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="desktop-hide" (click)="drawer.toggle()">
+        reorder
+      </mat-icon>
+      <app-carousel></app-carousel>
+    </div>
 
-      <div class="silder">
-        <app-carousel></app-carousel>
-      </div>
-
-      <div class="features">
-        <div class="row">
-          <div type="button" class="column"  routerLink="mockup">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">design_services</mat-icon>
-            <h3>Mockup</h3>
-            <p>Schau dir das Mockup dieser Website an und vergleiche es mit der tatsächlichen Umsetzung.
-            </p>
+    <div class="features">
+      <div class="row">
+        <div type="button" class="column" routerLink="mockup">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">design_services</mat-icon>
+          <h3>Mockup</h3>
+          <p>Schau dir das Mockup dieser Website an und vergleiche es mit der tatsächlichen Umsetzung.
+          </p>
         </div>
         <div type="button" class="column" routerLink="matrix">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">checklist</mat-icon>
-            <h3>Entscheidungsmatrix</h3>
-            <p>Welches Framework wurde in diesem Projekt aus welchem Grund verwendet?
-            </p>
-          </div>
-          <div type="button" class="column" routerLink="responsive">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">close_fullscreen</mat-icon>
-            <h3>Responsive
-            </h3>
-            <p>Diese Website wurde mit Angular Material responsive gemacht.
-            </p>
-          </div>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">checklist</mat-icon>
+          <h3>Entscheidungsmatrix</h3>
+          <p>Welches Framework wurde in diesem Projekt aus welchem Grund verwendet?
+          </p>
+        </div>
+        <div type="button" class="column" routerLink="responsive">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">close_fullscreen</mat-icon>
+          <h3>Responsive
+          </h3>
+          <p>Diese Website wurde mit Angular Material responsive gemacht.
+          </p>
         </div>
       </div>
-      
-      <div class="contents">
-        <div class="row">
-          <div class="column">
-            <figure><img src="assets/images/aussicht1.jpg"></figure>
-          </div>
-          <div class="column center-content">
-            <h3>Modul 152
-            </h3>
-            <p>Multimedia-Elemente für Webauftritte nach Vorgabe erstellen und
-                bestehende Multimedia-Inhalte aufbereiten, optimieren und in einen
-                bestehenden Webauftritt integrieren.
-            </p>
-          </div>
+    </div>
+
+    <div class="contents">
+      <div class="row">
+        <div class="column">
+          <figure><img src="assets/images/aussicht1.jpg"></figure>
         </div>
-        <div class="row">
-          <div class="column center-content">
-            <h3>Skiferien</h3>
-            <p>Im Fokus für dieses Projekt stehen meine Skiferien in St. Moritz. Mit Hilfe der dort gemachten
-                Bilder, zeige ich wie ich mit Bildern im Webauftritt umgehen kann.
-            </p>
-          </div>
-          <div class="column">
-            <figure><img src="assets/images/aussicht2.JPG"></figure>
-          </div>
+        <div class="column center-content">
+          <h3>Modul 152
+          </h3>
+          <p>Multimedia-Elemente für Webauftritte nach Vorgabe erstellen und
+            bestehende Multimedia-Inhalte aufbereiten, optimieren und in einen
+            bestehenden Webauftritt integrieren.
+          </p>
         </div>
-        <div class="row">
-          <div class="column">
+      </div>
+      <div class="row">
+        <div class="column center-content">
+          <h3>Skiferien</h3>
+          <p>Im Fokus für dieses Projekt stehen meine Skiferien in St. Moritz. Mit Hilfe der dort gemachten
+            Bilder, zeige ich wie ich mit Bildern im Webauftritt umgehen kann.
+          </p>
+        </div>
+        <div class="column">
+          <figure><img src="assets/images/aussicht2.JPG"></figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
           <figure><img src="assets/images/slide1.jpg"></figure>
-          </div>
-          <div class="column center-content">
-            <h3>Aaron Läuchli
-            </h3>
-            <p>Akutell bin ich im dritten Lehrjahr der Ausbildung zum Informatiker mit Fachrichtung Applikationsentwicklung.
-                Dieses Webseite habe ich für das Modul 152 bei Herr Rutschmann erstellt. 
-                Alle Bilder dieses Projekts sind von mir selbst aufgenommen und gehören mir.
-            </p>
-          </div>
+        </div>
+        <div class="column center-content">
+          <h3>Aaron Läuchli
+          </h3>
+          <p>Akutell bin ich im dritten Lehrjahr der Ausbildung zum Informatiker mit Fachrichtung
+            Applikationsentwicklung.
+            Dieses Webseite habe ich für das Modul 152 bei Herr Rutschmann erstellt.
+            Alle Bilder dieses Projekts sind von mir selbst aufgenommen und gehören mir.
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="space"></div>
-
-
-      <div class="contactus">
-        <h2>Jetzt für Updates abonnieren</h2>
-        <form>
-          <mat-form-field appearance="fill">
-            <mat-label>Abonnieren</mat-label>
-            <input matInput>
-          </mat-form-field>
-          <button mat-flat-button>Jetzt abonnieren</button>
-        </form>
-      </div>
+    <div class="space"></div>
 
 
-      <div class="footer" color="primary">
-        <mat-toolbar color="primary">
-          <span> &copy; Aaron Läuchli</span>
-        </mat-toolbar>
-      </div>
-    </mat-drawer-content>
-  </mat-drawer-container>
+    <div class="contactus">
+      <h2>Jetzt für Updates abonnieren</h2>
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>Abonnieren</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <button mat-flat-button>Jetzt abonnieren</button>
+      </form>
+    </div>
+
+
+    <div class="footer" color="primary">
+      <mat-toolbar color="primary">
+        <span> &copy; Aaron Läuchli</span>
+      </mat-toolbar>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

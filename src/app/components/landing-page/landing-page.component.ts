@@ -16,9 +16,7 @@ export class LandingPageComponent implements OnInit {
   showHide() {
 
   }
-
   isShowHideFlag:any = "over"
-
 
 
 }
