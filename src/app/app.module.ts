@@ -23,6 +23,9 @@ import { ResponsiveComponent } from './components/responsive/responsive.componen
 
 import 'img-comparison-slider';
 import { EditedPicturesComponent } from './components/edited-pictures/edited-pictures.component';
+import { LightboxModule } from 'ngx-lightbox';
+import { LightboxComponent } from './components/lightbox/lightbox.component';
+
 
 
 // @ts-ignore
@@ -40,6 +43,7 @@ import { EditedPicturesComponent } from './components/edited-pictures/edited-pic
     MatrixComponent,
     ResponsiveComponent,
     EditedPicturesComponent,
+    LightboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +57,7 @@ import { EditedPicturesComponent } from './components/edited-pictures/edited-pic
     MatInputModule,
     MatSidenavModule,
     MatCarouselModule.forRoot(),
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

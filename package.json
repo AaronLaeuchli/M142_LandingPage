@@ -23,6 +23,7 @@
     "@ngmodule/material-carousel": "^0.6.0",
     "img-comparison-slider": "^7.5.1",
     "ngx-image-comparison-slider": "^0.0.5",
+    "ngx-lightbox": "^2.5.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
