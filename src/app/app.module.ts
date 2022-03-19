@@ -32,7 +32,7 @@ import { JpgPngComponent } from './components/jpg-png/jpg-png.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { JpgPngDialogComponent } from './dialog/jpg-png-dialog/jpg-png-dialog.component';
 import { IsoDialogComponent } from './dialog/iso-dialog/iso-dialog.component';
-import { GifComponent } from './components/gif/gif.component';
+import { CarouselGalleryComponent } from './components/carousel-gallery/carousel-gallery.component';
 
 
 
@@ -57,7 +57,7 @@ import { GifComponent } from './components/gif/gif.component';
     JpgPngComponent,
     JpgPngDialogComponent,
     IsoDialogComponent,
-    GifComponent,
+    CarouselGalleryComponent,
   ],
   imports: [
     BrowserModule,
