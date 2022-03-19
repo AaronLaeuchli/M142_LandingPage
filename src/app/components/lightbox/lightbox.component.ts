@@ -18,8 +18,8 @@ export class LightboxComponent implements OnInit {
   ) {
     this.albums = [];
     for (let i = 1; i <= 6; i++) {
-      const src = 'assets/images/lightbox/image' + i + '.jpg';
-      const thumb = 'assets/images/lightbox/image' + i + '-thumb.jpg';
+      const src = 'assets/images/lightbox/test/image' + i + '.jpg';
+      const thumb = 'assets/images/lightbox/test/image' + i + '-thumb.jpg';
       const album = {
         src: src,
         thumb: thumb

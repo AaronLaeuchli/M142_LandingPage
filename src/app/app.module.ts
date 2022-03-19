@@ -25,6 +25,14 @@ import 'img-comparison-slider';
 import { EditedPicturesComponent } from './components/edited-pictures/edited-pictures.component';
 import { LightboxModule } from 'ngx-lightbox';
 import { LightboxComponent } from './components/lightbox/lightbox.component';
+import { IsoDifferenceComponent } from './components/iso-difference/iso-difference.component';
+import { SharpnessDifferenceComponent } from './components/sharpness-difference/sharpness-difference.component';
+import { JpgPngComponent } from './components/jpg-png/jpg-png.component';
+
+import { MatDialogModule } from '@angular/material/dialog';
+import { JpgPngDialogComponent } from './dialog/jpg-png-dialog/jpg-png-dialog.component';
+import { IsoDialogComponent } from './dialog/iso-dialog/iso-dialog.component';
+import { GifComponent } from './components/gif/gif.component';
 
 
 
@@ -44,6 +52,12 @@ import { LightboxComponent } from './components/lightbox/lightbox.component';
     ResponsiveComponent,
     EditedPicturesComponent,
     LightboxComponent,
+    IsoDifferenceComponent,
+    SharpnessDifferenceComponent,
+    JpgPngComponent,
+    JpgPngDialogComponent,
+    IsoDialogComponent,
+    GifComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +71,8 @@ import { LightboxComponent } from './components/lightbox/lightbox.component';
     MatInputModule,
     MatSidenavModule,
     MatCarouselModule.forRoot(),
-    LightboxModule
+    LightboxModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
