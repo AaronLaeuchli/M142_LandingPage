@@ -33,6 +33,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { JpgPngDialogComponent } from './dialog/jpg-png-dialog/jpg-png-dialog.component';
 import { IsoDialogComponent } from './dialog/iso-dialog/iso-dialog.component';
 import { CarouselGalleryComponent } from './components/carousel-gallery/carousel-gallery.component';
+import { AddImageComponent } from './apiComponents/add-image/add-image.component';
+import { ImageDetailComponent } from './apiComponents/image-detail/image-detail.component';
+import { ImageListComponent } from './apiComponents/image-list/image-list.component';
+
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { AddImageDragAndDropComponent } from './apiComponents/add-image-drag-and-drop/add-image-drag-and-drop.component';
 
 
 
@@ -58,6 +66,10 @@ import { CarouselGalleryComponent } from './components/carousel-gallery/carousel
     JpgPngDialogComponent,
     IsoDialogComponent,
     CarouselGalleryComponent,
+    AddImageComponent,
+    ImageDetailComponent,
+    ImageListComponent,
+    AddImageDragAndDropComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,7 +84,9 @@ import { CarouselGalleryComponent } from './components/carousel-gallery/carousel
     MatSidenavModule,
     MatCarouselModule.forRoot(),
     LightboxModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
