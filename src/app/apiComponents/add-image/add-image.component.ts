@@ -43,6 +43,7 @@ export class AddImageComponent implements OnInit {
     uploadData.append('myFile', this.selectedFile, this.selectedFile.name);
     console.log("test");
 
+
     this.imageService.upload(uploadData)
       .subscribe(
       res => {console.log(res);

@@ -17,7 +17,7 @@ export class ImageService {
     return this.http.get(`${baseUrl}/${id}`);
   }
   upload(data: any): Observable<any> {
-    return this.http.post(`${baseUrl}/upload`, data);
+    return this.http.post(`${baseUrl}upload`, data);
   }
 
   update(id: any, data: any): Observable<any> {

@@ -40,9 +40,9 @@ import { ImageListComponent } from './apiComponents/image-list/image-list.compon
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { AddImageDragAndDropComponent } from './apiComponents/add-image-drag-and-drop/add-image-drag-and-drop.component';
 
-
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { AddDraganddropComponent } from './apiComponents/add-draganddrop/add-draganddrop.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -69,7 +69,7 @@ import { AddImageDragAndDropComponent } from './apiComponents/add-image-drag-and
     AddImageComponent,
     ImageDetailComponent,
     ImageListComponent,
-    AddImageDragAndDropComponent,
+    AddDraganddropComponent
   ],
   imports: [
     BrowserModule,
@@ -86,9 +86,11 @@ import { AddImageDragAndDropComponent } from './apiComponents/add-image-drag-and
     LightboxModule,
     MatDialogModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxDropzoneModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
