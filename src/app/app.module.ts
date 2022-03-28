@@ -43,6 +43,9 @@ import { FormsModule } from '@angular/forms';
 
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { AddDraganddropComponent } from './apiComponents/add-draganddrop/add-draganddrop.component';
+import { UploadViewComponent } from './apiComponents/upload-view/upload-view.component';
+import { UploadGalleryComponent } from './apiComponents/upload-gallery/upload-gallery.component';
+
 
 // @ts-ignore
 // @ts-ignore
@@ -69,7 +72,9 @@ import { AddDraganddropComponent } from './apiComponents/add-draganddrop/add-dra
     AddImageComponent,
     ImageDetailComponent,
     ImageListComponent,
-    AddDraganddropComponent
+    AddDraganddropComponent,
+    UploadViewComponent,
+    UploadGalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +92,7 @@ import { AddDraganddropComponent } from './apiComponents/add-draganddrop/add-dra
     MatDialogModule,
     HttpClientModule,
     FormsModule,
-    NgxDropzoneModule
+    NgxDropzoneModule,
   ],
   providers: [
   ],

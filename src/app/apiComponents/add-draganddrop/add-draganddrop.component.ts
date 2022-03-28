@@ -27,8 +27,8 @@ export class AddDraganddropComponent implements OnInit {
   onUpload() {
     for (var i = 0; i < this.files.length; i++){
       const uploadData = new FormData();
-      console.log(this.files[i].name)
       uploadData.append('myFile', this.files[i], this.files[i].name);
+
       this.imageService.upload(uploadData)
         .subscribe(
         res => {console.log(res);
