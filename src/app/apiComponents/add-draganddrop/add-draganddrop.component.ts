@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ImageService} from "../../apiServices/image.service";
+import {delay} from "rxjs/operators";
 
 @Component({
   selector: 'app-add-draganddrop',
@@ -28,6 +29,8 @@ export class AddDraganddropComponent implements OnInit {
     for (var i = 0; i < this.files.length; i++){
       const uploadData = new FormData();
       uploadData.append('myFile', this.files[i], this.files[i].name);
+
+      console.log(this.files[i].name);
 
       this.imageService.upload(uploadData)
         .subscribe(

@@ -34,6 +34,6 @@ export class ImageService {
     return this.http.delete(`${baseUrl}/${id}`);
   }
   deleteAll(): Observable<any> {
-    return this.http.delete(baseUrl);
+    return this.http.delete(`${baseUrl}ImagesAll`);
   }
 }

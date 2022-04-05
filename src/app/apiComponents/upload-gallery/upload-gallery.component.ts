@@ -62,6 +62,10 @@ export class UploadGalleryComponent implements OnInit {
 
   }
 
+  public deleteAllImages(){
+    this.imageService.deleteAll().subscribe((r => console.log(r)));
+  }
+
 
 
   ngOnInit(): void {
