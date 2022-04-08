@@ -1,0 +1,30 @@
+
+<mat-drawer-container>
+  <mat-drawer #drawer [mode]="isShowHideFlag">
+    <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
+    <h1>Skiferien</h1>
+    <mat-list role="list">
+      <mat-list-item role="listitem"><a mat-button routerLink="">Home</a></mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar class="nav ">
+      <mat-list role="list">
+        <mat-list-item role="listitem"><a mat-button routerLink="">Home</a></mat-list-item>
+      </mat-list>
+    </mat-toolbar>
+
+    <div class="space"></div>
+
+
+    <app-parallax></app-parallax>
+
+
+
+    <div class="footer" color="primary">
+      <mat-toolbar color="primary">
+        <span> &copy; Aaron Läuchli</span>
+      </mat-toolbar>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

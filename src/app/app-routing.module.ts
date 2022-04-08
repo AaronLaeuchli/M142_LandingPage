@@ -11,6 +11,7 @@ import {AddImageComponent} from "./apiComponents/add-image/add-image.component";
 import {ImageDetailComponent} from "./apiComponents/image-detail/image-detail.component";
 import {ImageListComponent} from "./apiComponents/image-list/image-list.component";
 import {UploadViewComponent} from "./apiComponents/upload-view/upload-view.component";
+import {VideoLandingpageComponent} from "./videoComponent/video-landingpage/video-landingpage.component";
 
 
 
@@ -25,7 +26,8 @@ const routes: Routes = [
 
   { path: 'images', component: ImageListComponent },
   { path: 'images/:id', component: ImageDetailComponent },
-  { path: 'add', component: UploadViewComponent }
+  { path: 'add', component: UploadViewComponent },
+  { path: 'video', component: VideoLandingpageComponent }
 ];
 
 @NgModule({

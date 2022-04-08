@@ -45,6 +45,12 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import { AddDraganddropComponent } from './apiComponents/add-draganddrop/add-draganddrop.component';
 import { UploadViewComponent } from './apiComponents/upload-view/upload-view.component';
 import { UploadGalleryComponent } from './apiComponents/upload-gallery/upload-gallery.component';
+import { VideoLandingpageComponent } from './videoComponent/video-landingpage/video-landingpage.component';
+
+import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
+import { ParallaxComponent } from './videoComponent/parallax/parallax.component';
+
+import { NgxParallaxModule } from '@yoozly/ngx-parallax';
 
 
 // @ts-ignore
@@ -74,7 +80,9 @@ import { UploadGalleryComponent } from './apiComponents/upload-gallery/upload-ga
     ImageListComponent,
     AddDraganddropComponent,
     UploadViewComponent,
-    UploadGalleryComponent
+    UploadGalleryComponent,
+    VideoLandingpageComponent,
+    ParallaxComponent
   ],
   imports: [
     BrowserModule,
@@ -93,6 +101,8 @@ import { UploadGalleryComponent } from './apiComponents/upload-gallery/upload-ga
     HttpClientModule,
     FormsModule,
     NgxDropzoneModule,
+    NgxParallaxScrollModule,
+    NgxParallaxModule
   ],
   providers: [
   ],

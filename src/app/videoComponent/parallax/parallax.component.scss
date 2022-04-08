@@ -1,0 +1,13 @@
+.image {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image > video {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 200px);
+  object-fit: cover;
+}
