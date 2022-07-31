@@ -1,12 +1,13 @@
+
+
 <div class="image">
-  <video [muted]="true" autoplay src="assets/videos/video2.mp4" style="min-height: 100%; position: fixed;"></video>
+  <app-carousel></app-carousel>
 </div>
 
-
-<div style="margin-top: 50%;
+<div style="margin-top: 10%;
             padding: 7% 5% 0;
             position: relative;
-            background-color: rgba(192, 192, 192, 0.4);">
+            background-color: white">
   <h1 class="mb-4">Modul 152 - Video</h1>
   <div class="container">
     <br><br>
@@ -14,15 +15,21 @@
     <div style="height: content-box" >
       <h1 class="">Eigenes Video</h1>
       <div style="margin: 0; width: 100%; display: flex; justify-content: center">
-      <button (click)="pause()">Pause / Play</button>
-      <button (click)="addSpeed()">Speed x5 / 1x</button>
-      <button (click)="mute()">Mute / Unmute</button>
+        <button mat-raised-button (click)="pause()">Pause / Play</button>
+        <button mat-raised-button (click)="addSpeed()">Speed x5 / 1x</button>
+        <button mat-raised-button (click)="mute()">Mute / Unmute</button>
       </div>
       <div style="margin: 0; width: 100%; display: flex; justify-content: center">
         <video width="1200" height="900" src="assets/videos/Ski_Wachsen_Aaron_Laeuchli.mp4"  [muted]="true" id="video"></video>
       </div>
     </div>
 
+    <div style="margin: auto; width: 100%">
+      <h2>Die Clips im Querformat ohne Zeitraffer oder Slowmotion, wurden im Cinematic Mode aufgenommen und haben dadurch eine Tiefeschärfe von f5.</h2>
+      <h2>Bei der Positionierung wurde darauf geachtet, dass nach dem Goldenenschnitt gearbeitet wurde.</h2>
+    </div>
+
+    <br><br>
     <br><br>
     <div style="height: content-box" >
       <h1 class="">Youtube-Video einbinden</h1>
@@ -35,6 +42,16 @@
     <br>
     <br>
     <br>
+    <h2>Storyboard</h2>
+    <div style="margin: 0; width: 100%; display: flex; justify-content: center">
+      <img style="width: 50%" src="assets/images/storyboard.jpg">
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
 
   </div>
 </div>

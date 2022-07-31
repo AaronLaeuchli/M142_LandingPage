@@ -21,9 +21,9 @@ export class ParallaxComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  private play: number = 0;
-  private speed: number = 0;
-  private muted: number = 0;
+  private play: number = 1;
+  private speed: number = 1;
+  private muted: number = 1;
 
 
   public pause() {

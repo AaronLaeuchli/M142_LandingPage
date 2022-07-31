@@ -51,6 +51,7 @@ import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
 import { ParallaxComponent } from './videoComponent/parallax/parallax.component';
 
 import { NgxParallaxModule } from '@yoozly/ngx-parallax';
+import { MainpageComponent } from './laeuchliskulpturen/mainpage/mainpage.component';
 
 
 // @ts-ignore
@@ -82,7 +83,8 @@ import { NgxParallaxModule } from '@yoozly/ngx-parallax';
     UploadViewComponent,
     UploadGalleryComponent,
     VideoLandingpageComponent,
-    ParallaxComponent
+    ParallaxComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
